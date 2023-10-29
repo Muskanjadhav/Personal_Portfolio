@@ -88,7 +88,7 @@
                 <i class='bx bx-bar-chart-alt'></i>
                 <h3>Programming languages</h3>
                 <p>As I navigate my way through the ever-expanding landscape of programming languages, I'm continually amazed by their power to turn ideas into functional and transformative digital solutions.Include the languages like C, C++ ,Java,Python.</p>
-                <a href="programming.html" class="btn">Read More</a>
+                <a href="programming.html" class="btn">Read More  </a>
             </div>
         </div>
     </section>
@@ -103,7 +103,7 @@
                 <div class="portfolio-layer">
                     <h4>Landing page</h4>
                     <p>In this Project, I will create an attractive Landing page using HTML and CSS to showcase the art of web design, wih stunning graphics and interactive elements.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="https://github.com/Muskanjadhav/Landing_Page.git"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
@@ -120,8 +120,8 @@
                 <img src="port6.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Website</h4>
-                    <p>In this Project,I will be Building a dynamic E-commerce Website using HTML, CSS and Javascript, allowing users to browse, search and purchase products wir</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <p>Built in HTML, CSS, and JavaScript, the job openings website allows job seekers to search, apply for positions, submit job applications to employers, and manage candidates, and all that these basic web technologies play a role</p>
+                    <a href="https://github.com/Muskanjadhav/Job_Website.git"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
@@ -158,17 +158,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="">
             <div class="input-box">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Full Name" id="Name">
+                <input type="text" placeholder="Subject" id="Subject">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile number">
-                <input type="text" placeholder="muskanjadhav109@gmail.com">
+                <input type="number" placeholder="Mobile number" id="Number">
+                <input type="text" placeholder="muskanjadhav109@gmail.com" id="Email">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="Submit" value="Send Message" class="btn">
+            <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message" ></textarea>
+            <input type="button" value="Send Message" onclick="Send()" class="btn">
         </form>
     </section>
 
@@ -182,6 +182,10 @@
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 
     <!--scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>

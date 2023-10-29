@@ -57,6 +57,36 @@ const typed = new Typed('.multiple-text', {
     loop:  true
 });
 
+function Send(){
+    // console.log("function call");
+    var name = document.getElementById("Name").value;
+    var subject = document.getElementById("Subject").value;
+    var email = document.getElementById("Email").value;
+    var contact = document.getElementById("Number").value;
+    var message = document.getElementById("Message").value;
+
+    var body = "Name: " + name + "<br/> Subject:" + subject + "<br/> Contact Number:" + contact + "<br/> Email:" + email + "<br/>Meassge:" + message;
+
+    console.log(body);
+    Email.send({
+        SecureToken : "aa1af516-9beb-4dde-b830-523f3ec2fa4c",
+        To : ' muskanjadhav109@gmail.com',
+        From : "muskanjadhav109@gmail.com",
+        Subject : subject,
+        Body : body
+    }).then(
+      message => {
+        if(message == 'OK'){
+
+            swal("Successful", "Your Data Successfull Received", "success");
+        }
+        else{
+            swal("Something Wrong", "Your Data is not Received", "error");
+        }
+    }
+    );
+}
+
 
 
 
